@@ -1,14 +1,9 @@
-Started on 25 Jul, 2018 10:54:00 AM
-Polling SCM changes on master
+Started on 25 Jul, 2018 11:40:00 AM
 Using strategy: Default
- > git rev-parse --is-inside-work-tree # timeout=10
-Fetching changes from the remote Git repositories
- > git config remote.origin.url https://github.com/vijayrana-eits/test-with-jenkins.git # timeout=10
-Fetching upstream changes from https://github.com/vijayrana-eits/test-with-jenkins.git
+[poll] Last Built Revision: Revision a65a052c78b378ae2dde9163be67334b652e3a2f (refs/remotes/origin/master)
  > git --version # timeout=10
- > git fetch --tags --progress https://github.com/vijayrana-eits/test-with-jenkins.git +refs/heads/*:refs/remotes/origin/*
-Polling for changes in
-Seen 0 remote branches
- > git show-ref --tags -d # timeout=10
-Done. Took 2.1 sec
+ > git ls-remote -h https://github.com/vijayrana-eits/test-with-jenkins.git # timeout=10
+Found 1 remote heads on https://github.com/vijayrana-eits/test-with-jenkins.git
+[poll] Latest remote head revision on refs/heads/master is: a65a052c78b378ae2dde9163be67334b652e3a2f - already built by 92
+Done. Took 2.3 sec
 No changes
