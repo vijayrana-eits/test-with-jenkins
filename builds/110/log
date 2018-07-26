@@ -1,0 +1,20 @@
+Started by user [8mha:////4DGHDbK82lr9TrGFVTRGkdNvnxwxKFOfJRZQmL07sFFUAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZu/dLi1CL9ssysxEoA/zMArsAAAAA=[0mvijay singh
+Building in workspace /var/lib/jenkins/workspace/Project with git
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/vijayrana-eits/test-with-jenkins.git # timeout=10
+Fetching upstream changes from https://github.com/vijayrana-eits/test-with-jenkins.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/vijayrana-eits/test-with-jenkins.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 767dac470b8abb8f27207ebacb6520ade7db3595 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 767dac470b8abb8f27207ebacb6520ade7db3595
+Commit message: "3rd tests with error"
+ > git rev-list --no-walk 767dac470b8abb8f27207ebacb6520ade7db3595 # timeout=10
+[Project with git] $ /bin/sh -xe /tmp/jenkins6041718716669596738.sh
++ date
+Thu Jul 26 16:46:51 IST 2018
+ERROR: Unable to find build script at /var/lib/jenkins/workspace/Project with git/build.xml
+Finished: FAILURE

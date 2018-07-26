@@ -1,0 +1,30 @@
+Started by an SCM change
+Building in workspace /var/lib/jenkins/workspace/Project with git
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/vijayrana-eits/test-with-jenkins.git # timeout=10
+Fetching upstream changes from https://github.com/vijayrana-eits/test-with-jenkins.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/vijayrana-eits/test-with-jenkins.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 40bc0a1639a15316dc63a2b7edcf3708a99d7d00 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 40bc0a1639a15316dc63a2b7edcf3708a99d7d00
+Commit message: "2nd tests"
+ > git rev-list --no-walk 845338163cff5e8aed84a43a0e73f26fd53e158c # timeout=10
+[Project with git] $ /bin/sh -xe /tmp/jenkins8922329990710686364.sh
++ cd /var/lib/jenkins/jobs
++ php testpro/index.php
+The number is: 0 
+The number is: 1 
+The number is: 2 
+The number is: 3 
+The number is: 4 
+The number is: 5 
+The number is: 6 
+The number is: 7 
+The number is: 8 
+The number is: 9 
+The number is: 10 
+Finished: SUCCESS

@@ -1,0 +1,9 @@
+Started on 26 Jul, 2018 10:54:00 AM
+Using strategy: Default
+[poll] Last Built Revision: Revision 845338163cff5e8aed84a43a0e73f26fd53e158c (refs/remotes/origin/master)
+ > git --version # timeout=10
+ > git ls-remote -h https://github.com/vijayrana-eits/test-with-jenkins.git # timeout=10
+Found 1 remote heads on https://github.com/vijayrana-eits/test-with-jenkins.git
+[poll] Latest remote head revision on refs/heads/master is: 40bc0a1639a15316dc63a2b7edcf3708a99d7d00
+Done. Took 1.7 sec
+Changes found

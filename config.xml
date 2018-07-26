@@ -33,10 +33,14 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>cd /var/lib/jenkins/jobs 
-php testpro/index.php</command>
+      <command>date</command>
     </hudson.tasks.Shell>
+    <hudson.tasks.Ant plugin="ant@1.8">
+      <targets></targets>
+    </hudson.tasks.Ant>
   </builders>
   <publishers/>
-  <buildWrappers/>
+  <buildWrappers>
+    <hudson.tasks.AntWrapper plugin="ant@1.8"/>
+  </buildWrappers>
 </project>

@@ -1,0 +1,20 @@
+Started by an SCM change
+Building in workspace /var/lib/jenkins/workspace/Project with git
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/vijayrana-eits/test-with-jenkins.git # timeout=10
+Fetching upstream changes from https://github.com/vijayrana-eits/test-with-jenkins.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/vijayrana-eits/test-with-jenkins.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 5a6ef97c980c6b85028f71b5c1d5c5ce49f2c868 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 5a6ef97c980c6b85028f71b5c1d5c5ce49f2c868
+Commit message: "3rd tests with error"
+ > git rev-list --no-walk 5a6ef97c980c6b85028f71b5c1d5c5ce49f2c868 # timeout=10
+[Project with git] $ /bin/sh -xe /tmp/jenkins615140766393119748.sh
++ date
+Thu Jul 26 16:48:12 IST 2018
+ERROR: Unable to find build script at /var/lib/jenkins/workspace/Project with git/build.xml
+Finished: FAILURE
