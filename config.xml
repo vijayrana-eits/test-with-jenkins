@@ -31,7 +31,12 @@
     </hudson.triggers.SCMTrigger>
   </triggers>
   <concurrentBuild>false</concurrentBuild>
-  <builders/>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>cd /var/lib/jenkins/jobs 
+php testpro/index.php</command>
+    </hudson.tasks.Shell>
+  </builders>
   <publishers/>
   <buildWrappers/>
 </project>
